@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".ui.trip.TripSearchFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="32dp">
+
+        <TextView
+            android:id="@+id/TripSearchTitle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:layout_marginEnd="16dp"
+            android:text="Search"
+            android:textAlignment="center"
+            android:textSize="20sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.473"
+            app:layout_constraintStart_toEndOf="@+id/imageButtonSearchBack"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <EditText
+            android:id="@+id/editTextTripSearchName"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="32dp"
+            android:layout_marginEnd="15dp"
+            android:autofillHints="name"
+            android:background="@drawable/edit_text_bg"
+            android:drawableStart="@drawable/custom_card_travel"
+            android:drawablePadding="10dp"
+            android:ems="10"
+            android:hint="@string/trip_name"
+            android:inputType="text"
+            android:paddingStart="15dp"
+            android:selectAllOnFocus="true"
+            android:textColorHint="#757575"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.482"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/TripSearchTitle"
+            tools:ignore="RtlSymmetry" />
+
+        <EditText
+            android:id="@+id/editTextDateOfTripSearch"
+            android:layout_width="0dp"
+            android:layout_height="55dp"
+            android:layout_marginTop="16dp"
+            android:autofillHints="name"
+            android:background="@drawable/edit_text_bg"
+            android:drawableStart="@drawable/custom_calendar_month"
+            android:drawablePadding="10dp"
+            android:ems="10"
+            android:hint="@string/date_of_the_trip"
+            android:inputType="none"
+            android:paddingStart="15dp"
+            app:layout_constraintEnd_toEndOf="@+id/editTextTripSearchName"
+            app:layout_constraintStart_toStartOf="@+id/editTextTripSearchName"
+            app:layout_constraintTop_toBottomOf="@+id/editTextTripSearchDestination"
+            tools:ignore="RtlSymmetry,TextFields" />
+
+        <EditText
+            android:id="@+id/editTextTripSearchDestination"
+            android:layout_width="0dp"
+            android:layout_height="55dp"
+            android:layout_marginTop="16dp"
+            android:autofillHints="name"
+            android:background="@drawable/edit_text_bg"
+            android:drawableStart="@drawable/custom_description"
+            android:drawablePadding="10dp"
+            android:ems="10"
+            android:hint="@string/trip_destination"
+            android:inputType="text"
+            android:paddingStart="15dp"
+            android:selectAllOnFocus="true"
+            app:layout_constraintEnd_toEndOf="@+id/editTextDateOfTripSearch"
+            app:layout_constraintStart_toStartOf="@+id/editTextDateOfTripSearch"
+            app:layout_constraintTop_toBottomOf="@+id/editTextTripSearchName"
+            tools:ignore="RtlSymmetry" />
+
+        <Button
+            android:id="@+id/searchBtn"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            android:backgroundTint="@color/cyan_500"
+            android:text="@string/search"
+            app:layout_constraintEnd_toEndOf="@+id/editTextDateOfTripSearch"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/editTextDateOfTripSearch"
+            app:layout_constraintTop_toBottomOf="@+id/editTextDateOfTripSearch" />
+
+        <ImageButton
+            android:id="@+id/imageButtonSearchBack"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_marginStart="16dp"
+            android:background="@color/white"
+            android:src="@drawable/ic_baseline_arrow_back_24"
+            app:layout_constraintBottom_toBottomOf="@+id/TripSearchTitle"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/TripSearchTitle" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</FrameLayout>

@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.trip.TripDetailsFragment">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:ignore="UselessParent">
+        <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/textViewTripType_Detail"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/textview_bgcyan_radius"
+            android:padding="3dp"
+            android:textColor="@color/white"
+            app:layout_constraintStart_toStartOf="@+id/textViewTripName_Detail"
+            app:layout_constraintTop_toBottomOf="@+id/textViewTripName_Detail"
+            tools:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/textViewPeopleNumber_Detail"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:background="@drawable/textview_bgcyan_radius"
+            android:padding="3dp"
+            android:textColor="@color/white"
+            app:layout_constraintBottom_toBottomOf="@+id/textViewTripType_Detail"
+            app:layout_constraintStart_toEndOf="@+id/textViewTripType_Detail"
+            app:layout_constraintTop_toTopOf="@+id/textViewTripType_Detail"
+            app:layout_constraintVertical_bias="0.0"
+            tools:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/textViewTripName_Detail"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="10dp"
+            android:text="@string/trip_name"
+            android:textSize="20sp"
+            app:layout_constraintEnd_toStartOf="@+id/imageViewMenuBtn"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/textView8"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:text="@string/trip_description"
+            android:textSize="20sp"
+            app:layout_constraintEnd_toEndOf="@+id/textViewDateOfTrip_Detail"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/textViewTripName_Detail"
+            app:layout_constraintTop_toBottomOf="@+id/textView12"
+            tools:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/textView11"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:text="@string/trip_expenses"
+            android:textSize="20sp"
+            app:layout_constraintEnd_toEndOf="@+id/textView10"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/textView10"
+            app:layout_constraintTop_toBottomOf="@+id/textView10"
+            tools:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/textViewTripDestination_Detail"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:drawablePadding="10dp"
+            android:gravity="center_vertical"
+            android:text="@string/trip_destination"
+            app:drawableStartCompat="@drawable/ic_baseline_location"
+            app:layout_constraintEnd_toEndOf="@+id/imageViewMenuBtn"
+            app:layout_constraintStart_toStartOf="@+id/textViewTripName_Detail"
+            app:layout_constraintTop_toBottomOf="@+id/textViewTripType_Detail" />
+
+        <TextView
+            android:id="@+id/textViewDateOfTrip_Detail"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:drawablePadding="10dp"
+            android:gravity="center_vertical"
+            android:text="@string/_23_11_2022"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toEndOf="@+id/textViewTripDestination_Detail"
+            app:layout_constraintStart_toStartOf="@+id/textViewTripDestination_Detail"
+            app:layout_constraintTop_toBottomOf="@+id/textViewTripDestination_Detail"
+            tools:textStyle="bold"
+            app:drawableStartCompat="@drawable/ic_baseline_calendar_month" />
+
+        <TextView
+            android:id="@+id/textViewTripDescription_Detail"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:text="Description content"
+            app:layout_constraintEnd_toEndOf="@+id/textView8"
+            app:layout_constraintStart_toStartOf="@+id/textView8"
+            app:layout_constraintTop_toBottomOf="@+id/textView8" />
+
+        <TextView
+            android:id="@+id/textView10"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/textview_bg"
+            app:layout_constraintEnd_toEndOf="@+id/textViewTripDescription_Detail"
+            app:layout_constraintStart_toStartOf="@+id/textViewTripDescription_Detail"
+            app:layout_constraintTop_toBottomOf="@+id/textViewTripDescription_Detail" />
+
+        <TextView
+            android:id="@+id/textView12"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:padding="2dp"
+            android:text="@string/risk_assessment"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="@+id/textViewDateOfTrip_Detail"
+            app:layout_constraintTop_toBottomOf="@+id/textViewDateOfTrip_Detail" />
+
+        <TextView
+            android:id="@+id/textViewRiskAssessment_Detail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toBottomOf="@+id/textView12"
+            app:layout_constraintStart_toEndOf="@+id/textView12"
+            app:layout_constraintTop_toTopOf="@+id/textView12" />
+
+        <ImageView
+            android:id="@+id/imageViewMenuBtn"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="15dp"
+            android:src="@drawable/ic_baseline_more_horiz_24"
+            app:layout_constraintBottom_toBottomOf="@+id/textViewTripName_Detail"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/textViewTripName_Detail" />
+
+        <androidx.fragment.app.FragmentContainerView
+            android:id="@+id/fragmentContainerViewExpenseList"
+            android:name="com.example.trips.ui.expenses.ExpenseListFragment"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            app:layout_constraintEnd_toEndOf="@+id/textView11"
+            app:layout_constraintStart_toStartOf="@+id/textView11"
+            app:layout_constraintTop_toBottomOf="@+id/textView11" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+</FrameLayout>

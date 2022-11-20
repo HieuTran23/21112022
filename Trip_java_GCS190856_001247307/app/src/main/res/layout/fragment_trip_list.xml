@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.trip.TripListFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <EditText
+            android:id="@+id/editTextTripListSearch"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="24dp"
+            android:autofillHints=""
+            android:hint="@string/search"
+            android:inputType="text"
+            app:layout_constraintEnd_toStartOf="@+id/imageButtonTripListSearch"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerViewExpenseList"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="30dp"
+            android:paddingBottom="100dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/editTextTripListSearch"
+            tools:listitem="@layout/list_item_trip" />
+
+        <ImageButton
+            android:id="@+id/imageButtonTripListSearch"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:background="@color/white"
+            android:padding="10dp"
+            android:src="@drawable/ic_baseline_search_24"
+            app:layout_constraintBottom_toBottomOf="@+id/editTextTripListSearch"
+            app:layout_constraintEnd_toStartOf="@+id/imageButtonTripListFilter"
+            app:layout_constraintTop_toTopOf="@+id/editTextTripListSearch"
+            android:contentDescription="@string/search" />
+
+        <ImageButton
+            android:id="@+id/imageButtonTripListFilter"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_marginEnd="16dp"
+            android:background="@color/white"
+            android:contentDescription="@string/filter"
+            android:padding="10dp"
+            android:src="@drawable/ic_baseline_filter_list_24"
+            app:layout_constraintBottom_toBottomOf="@+id/imageButtonTripListSearch"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/imageButtonTripListSearch" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</FrameLayout>

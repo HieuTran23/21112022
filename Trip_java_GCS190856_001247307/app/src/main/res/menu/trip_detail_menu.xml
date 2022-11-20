@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/menuItemEditTrip"
+        android:icon="@drawable/ic_baseline_description"
+        android:title="@string/edit_trip" />
+    <item
+        android:id="@+id/menuItemDeleteTrip"
+        android:icon="@drawable/ic_baseline_description"
+        android:title="@string/delete_trip" />
+    <item
+        android:id="@+id/menuItemAddExpensesTrip"
+        android:icon="@drawable/ic_baseline_description"
+        android:title="@string/add_expenses" />
+
+</menu>

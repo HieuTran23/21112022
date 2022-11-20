@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.trip.TripAddFragment">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:ignore="UselessParent">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <EditText
+            android:id="@+id/editTextTripSearchName"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="15dp"
+            android:autofillHints="name"
+            android:background="@drawable/edit_text_bg"
+            android:drawableStart="@drawable/custom_card_travel"
+            android:drawablePadding="10dp"
+            android:ems="10"
+            android:hint="@string/trip_name"
+            android:inputType="text"
+            android:paddingStart="15dp"
+            android:selectAllOnFocus="true"
+            android:textColorHint="#757575"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.482"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textViewErrorMessage"
+            tools:ignore="RtlSymmetry" />
+
+        <EditText
+            android:id="@+id/editTextTripDestination"
+            android:layout_width="0dp"
+            android:layout_height="55dp"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/edit_text_bg"
+            android:drawableStart="@drawable/custom_location"
+            android:drawablePadding="10dp"
+            android:ems="10"
+            android:hint="@string/destination"
+            android:inputType="text"
+            android:paddingStart="15dp"
+            android:selectAllOnFocus="true"
+            app:layout_constraintEnd_toEndOf="@+id/editTextTripSearchName"
+            app:layout_constraintStart_toStartOf="@+id/editTextTripSearchName"
+            app:layout_constraintTop_toBottomOf="@+id/editTextTripSearchName"
+            tools:ignore="RtlSymmetry"
+            android:autofillHints="name" />
+
+        <EditText
+            android:id="@+id/editTextDateOfTripSearch"
+            android:layout_width="0dp"
+            android:layout_height="55dp"
+            android:layout_marginTop="16dp"
+            android:autofillHints="name"
+            android:background="@drawable/edit_text_bg"
+            android:drawableStart="@drawable/custom_calendar_month"
+            android:drawablePadding="10dp"
+            android:ems="10"
+            android:hint="@string/date_of_the_trip"
+            android:inputType="none"
+            android:paddingStart="15dp"
+            app:layout_constraintEnd_toEndOf="@+id/editTextTripDestination"
+            app:layout_constraintStart_toStartOf="@+id/editTextTripDestination"
+            app:layout_constraintTop_toBottomOf="@+id/editTextTripDestination"
+            tools:ignore="RtlSymmetry,TextFields" />
+
+        <EditText
+            android:id="@+id/editTextTripSearchDestination"
+            android:layout_width="0dp"
+            android:layout_height="55dp"
+            android:layout_marginTop="16dp"
+            android:autofillHints="name"
+            android:background="@drawable/edit_text_bg"
+            android:drawableStart="@drawable/custom_description"
+            android:drawablePadding="10dp"
+            android:ems="10"
+            android:hint="@string/description"
+            android:inputType="text"
+            android:paddingStart="15dp"
+            android:selectAllOnFocus="true"
+            app:layout_constraintEnd_toEndOf="@+id/editTextDateOfTripSearch"
+            app:layout_constraintStart_toStartOf="@+id/editTextDateOfTripSearch"
+            app:layout_constraintTop_toBottomOf="@+id/editTextDateOfTripSearch"
+            tools:ignore="RtlSymmetry" />
+
+        <Switch
+            android:id="@+id/switchRiskAssessment"
+            android:layout_width="0dp"
+            android:layout_height="55dp"
+            android:layout_marginTop="16dp"
+            android:text="@string/risk_assessment"
+            app:layout_constraintEnd_toEndOf="@+id/editTextTripSearchDestination"
+            app:layout_constraintStart_toStartOf="@+id/editTextTripSearchDestination"
+            app:layout_constraintTop_toBottomOf="@+id/textInputLayout1"
+            tools:ignore="UseSwitchCompatOrMaterialXml" />
+
+        <Button
+            android:id="@+id/searchBtn"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            android:backgroundTint="@color/cyan_500"
+            android:text="@string/add_new_trip"
+            app:layout_constraintEnd_toEndOf="@+id/switchRiskAssessment"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/switchRiskAssessment"
+            app:layout_constraintTop_toBottomOf="@+id/switchRiskAssessment" />
+
+        <TextView
+            android:id="@+id/textViewErrorMessage"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginEnd="15dp"
+            android:gravity="center"
+            android:textColor="@color/red_600"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/textInputLayout"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
+            android:layout_width="0dp"
+            android:layout_height="55dp"
+            android:layout_marginTop="16dp"
+            app:layout_constraintEnd_toEndOf="@+id/switchRiskAssessment"
+            app:layout_constraintStart_toStartOf="@+id/switchRiskAssessment"
+            app:layout_constraintTop_toBottomOf="@+id/editTextTripSearchDestination">
+
+            <AutoCompleteTextView
+                android:id="@+id/autoCompleteTextViewTripType"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:inputType="none"
+                android:text="@string/none" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/textInputLayout1"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
+            android:layout_width="0dp"
+            android:layout_height="55dp"
+            android:layout_marginTop="16dp"
+            app:layout_constraintEnd_toEndOf="@+id/switchRiskAssessment"
+            app:layout_constraintStart_toStartOf="@+id/switchRiskAssessment"
+            app:layout_constraintTop_toBottomOf="@+id/textInputLayout">
+
+            <AutoCompleteTextView
+                android:id="@+id/autoCompleteTextViewExpenseType"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:inputType="none"
+                android:text="@string/none" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </ScrollView>
+
+</FrameLayout>

@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/expenseListItem"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/tripListItemBox"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15dp"
+            android:layout_marginEnd="15dp"
+            android:layout_marginBottom="16dp"
+            android:background="@drawable/list_item_bg"
+            android:padding="8dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <TextView
+                android:id="@+id/textViewExpenseType_listItem"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:text="@string/trip_expensive"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toStartOf="@+id/textViewExpenseAmount_listItem"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/textViewExpenseAmount_listItem"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="16dp"
+                android:background="@drawable/textview_bgcyan_radius"
+                android:padding="3dp"
+                android:text="$30"
+                android:textColor="@color/white"
+                app:layout_constraintBottom_toBottomOf="@+id/textViewExpenseType_listItem"
+                app:layout_constraintEnd_toStartOf="@+id/imageViewExpesnseListItemMenuBtn"
+                app:layout_constraintTop_toTopOf="@+id/textViewExpenseType_listItem"
+                app:layout_constraintVertical_bias="0.0" />
+
+            <TextView
+                android:id="@+id/textViewExpenseDate_listItem"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:drawablePadding="10dp"
+                android:gravity="center_vertical"
+                android:text="@string/_23_11_2022"
+                android:textSize="12sp"
+                android:textStyle="bold"
+                app:drawableStartCompat="@drawable/ic_baseline_calendar_month"
+                app:layout_constraintStart_toStartOf="@+id/textViewExpenseType_listItem"
+                app:layout_constraintTop_toBottomOf="@+id/textViewExpenseType_listItem" />
+
+            <TextView
+                android:id="@+id/textViewExpenseTime_listItem"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_marginStart="8dp"
+                android:gravity="center_vertical"
+                android:text="@string/_13_30"
+                android:textSize="12sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="@+id/textViewExpenseDate_listItem"
+                app:layout_constraintEnd_toEndOf="@+id/imageViewExpesnseListItemMenuBtn"
+                app:layout_constraintStart_toEndOf="@+id/textViewExpenseDate_listItem"
+                app:layout_constraintTop_toTopOf="@+id/textViewExpenseDate_listItem" />
+
+            <TextView
+                android:id="@+id/textViewExpenseComment_listItem"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:gravity="center_vertical"
+                android:text="@string/comment"
+                app:layout_constraintEnd_toEndOf="@+id/textViewExpenseTime_listItem"
+                app:layout_constraintStart_toStartOf="@+id/textViewExpenseDate_listItem"
+                app:layout_constraintTop_toBottomOf="@+id/textViewExpenseDate_listItem" />
+
+            <ImageView
+                android:id="@+id/imageViewExpesnseListItemMenuBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintBottom_toBottomOf="@+id/textViewExpenseAmount_listItem"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/textViewExpenseAmount_listItem"
+                app:srcCompat="@drawable/ic_baseline_more_horiz_24" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</FrameLayout>

@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/IT/COMP1786 - Mobile/Trips/app/src/main/res/drawable/custom_amount.xml" value="0.1405" />
+        <entry key="..\:/IT/COMP1786 - Mobile/Trips/app/src/main/res/drawable/custom_calendar_month.xml" value="0.13" />
+        <entry key="..\:/IT/COMP1786 - Mobile/Trips/app/src/main/res/drawable/custom_card_travel.xml" value="0.312" />
+        <entry key="..\:/IT/COMP1786 - Mobile/Trips/app/src/main/res/drawable/custom_coment.xml" value="0.1405" />
+        <entry key="..\:/IT/COMP1786 - Mobile/Trips/app/src/main/res/drawable/custom_description.xml" value="0.1615" />
+        <entry key="..\:/IT/COMP1786 - Mobile/Trips/app/src/main/res/drawable/custom_location.xml" value="0.208" />
+        <entry key="..\:/IT/COMP1786 - Mobile/Trips/app/src/main/res/drawable/custome_time.xml" value="0.1405" />
+        <entry key="..\:/IT/COMP1786 - Mobile/Trips/app/src/main/res/drawable/edit_text_bg.xml" value="0.276" />
+        <entry key="..\:/IT/COMP1786 - Mobile/Trips/app/src/main/res/drawable/ic_baseline_card_travel.xml" value="0.312" />
+        <entry key="..\:/IT/COMP1786 - Mobile/Trips/app/src/main/res/drawable/ic_baseline_card_travel_24.xml" value="0.276" />
+        <entry key="..\:/IT/COMP1786 - Mobile/Trips/app/src/main/res/drawable/ic_baseline_location.xml" value="0.1" />
+        <entry key="..\:/IT/COMP1786 - Mobile/Trips/app/src/main/res/drawable/ic_baseline_location_on_24.xml" value="0.276" />
+        <entry key="..\:/IT/COMP1786 - Mobile/Trips/app/src/main/res/drawable/list_item_bg.xml" value="0.18" />
+        <entry key="..\:/IT/COMP1786 - Mobile/Trips/app/src/main/res/drawable/textview_bg.xml" value="0.1615" />
+        <entry key="..\:/IT/COMP1786 - Mobile/Trips/app/src/main/res/drawable/textview_bgcyan_radius.xml" value="0.12" />
+        <entry key="..\:/IT/COMP1786 - Mobile/Trips/app/src/main/res/layout/activity_main.xml" value="0.1" />
+        <entry key="..\:/IT/COMP1786 - Mobile/Trips/app/src/main/res/layout/dropdown_expensive_type.xml" value="0.19701086956521738" />
+        <entry key="..\:/IT/COMP1786 - Mobile/Trips/app/src/main/res/layout/dropdown_expensive_type_item.xml" value="0.19701086956521738" />
+        <entry key="..\:/IT/COMP1786 - Mobile/Trips/app/src/main/res/layout/dropdown_trip_people_type.xml" value="0.26358695652173914" />
+        <entry key="..\:/IT/COMP1786 - Mobile/Trips/app/src/main/res/layout/dropdown_trip_type_item.xml" value="0.1" />
+        <entry key="..\:/IT/COMP1786 - Mobile/Trips/app/src/main/res/layout/expense_lists_item.xml" value="0.2046875" />
+        <entry key="..\:/IT/COMP1786 - Mobile/Trips/app/src/main/res/layout/fragment_calendar.xml" value="0.33" />
+        <entry key="..\:/IT/COMP1786 - Mobile/Trips/app/src/main/res/layout/fragment_delete_comfirm.xml" value="0.17426545086119555" />
+        <entry key="..\:/IT/COMP1786 - Mobile/Trips/app/src/main/res/layout/fragment_delete_confirm.xml" value="0.17426545086119555" />
+        <entry key="..\:/IT/COMP1786 - Mobile/Trips/app/src/main/res/layout/fragment_expense_add.xml" value="0.1" />
+        <entry key="..\:/IT/COMP1786 - Mobile/Trips/app/src/main/res/layout/fragment_expense_list.xml" value="0.25" />
+        <entry key="..\:/IT/COMP1786 - Mobile/Trips/app/src/main/res/layout/fragment_expensive_add.xml" value="0.33" />
+        <entry key="..\:/IT/COMP1786 - Mobile/Trips/app/src/main/res/layout/fragment_exprensive_add.xml" value="0.5" />
+        <entry key="..\:/IT/COMP1786 - Mobile/Trips/app/src/main/res/layout/fragment_home.xml" value="0.3625" />
+        <entry key="..\:/IT/COMP1786 - Mobile/Trips/app/src/main/res/layout/fragment_time_picker.xml" value="0.1" />
+        <entry key="..\:/IT/COMP1786 - Mobile/Trips/app/src/main/res/layout/fragment_trip_add.xml" value="0.33" />
+        <entry key="..\:/IT/COMP1786 - Mobile/Trips/app/src/main/res/layout/fragment_trip_add_confirm.xml" value="0.1" />
+        <entry key="..\:/IT/COMP1786 - Mobile/Trips/app/src/main/res/layout/fragment_trip_details.xml" value="0.19382022471910113" />
+        <entry key="..\:/IT/COMP1786 - Mobile/Trips/app/src/main/res/layout/fragment_trip_edit.xml" value="0.1" />
+        <entry key="..\:/IT/COMP1786 - Mobile/Trips/app/src/main/res/layout/fragment_trip_list.xml" value="0.33" />
+        <entry key="..\:/IT/COMP1786 - Mobile/Trips/app/src/main/res/layout/fragment_trip_search.xml" value="0.33" />
+        <entry key="..\:/IT/COMP1786 - Mobile/Trips/app/src/main/res/layout/list_item_expense.xml" value="0.5729813664596274" />
+        <entry key="..\:/IT/COMP1786 - Mobile/Trips/app/src/main/res/layout/list_item_trip.xml" value="0.33" />
+        <entry key="..\:/IT/COMP1786 - Mobile/Trips/app/src/main/res/layout/trip_list_item.xml" value="0.5767716535433071" />
+        <entry key="..\:/IT/COMP1786 - Mobile/Trips/app/src/main/res/menu/expense_list_item_menu.xml" value="0.1" />
+        <entry key="..\:/IT/COMP1786 - Mobile/Trips/app/src/main/res/menu/menu.xml" value="0.33695652173913043" />
+        <entry key="..\:/IT/COMP1786 - Mobile/Trips/app/src/main/res/menu/menu_nav.xml" value="0.3416666666666667" />
+        <entry key="..\:/IT/COMP1786 - Mobile/Trips/app/src/main/res/menu/trip_detail_menu.xml" value="0.3528205128205128" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>

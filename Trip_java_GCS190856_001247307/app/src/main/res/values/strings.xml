@@ -1,0 +1,59 @@
+<resources>
+    <string name="app_name">Trips</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="trip_name">Trip Name</string>
+    <string name="destination">Destination</string>
+    <string name="_23_11_2022">23/11/2022</string>
+    <string name="description">Description</string>
+    <string name="risk_assessment">Risk assessment</string>
+    <string name="add_new_trip">Add new Trip</string>
+    <string name="trip_destination">Trip Destination</string>
+    <string name="date_of_the_trip">Date of the trip</string>
+    <string name="trip_description">Trip Description</string>
+    <string name="confirm">Confirm</string>
+    <string name="trip_expensive">Trip Expensive</string>
+    <string name="edit_trip">Edit Trip</string>
+    <string name="delete_trip">Delete Trip</string>
+    <string name="add_expenses">Add Expenses</string>
+    <string name="Sharp">#</string>
+    <string name="update_trip">Update Trip</string>
+    <string name="_1_10">1-10</string>
+    <string name="business">Business</string>
+    <string name="none">None</string>
+    <string name="people_number">People Number</string>
+    <string name="trip_type">Trip Type</string>
+    <string name="amount">Amount</string>
+    <string name="comment">Comment</string>
+    <string name="add_new_expense">ADD NEW EXPENSE</string>
+    <string name="date">Date</string>
+    <string name="time">Time</string>
+    <string name="view_back">View back</string>
+    <string name="food">Food</string>
+    <string name="_13_30">13:30</string>
+    <string name="delete_expensive">Delete Expensive</string>
+    <string name="search">Search</string>
+    <string name="cancel">Cancel</string>
+    <string name="filter">Filter</string>
+    <string name="setting">Setting</string>
+    <string name="reset_database">Reset Database</string>
+    <string name="back_up_database">Back Up Database</string>
+    <string name="trip_expenses">Trip Expenses</string>
+    <string-array name="trip_type">
+        <item>None</item>
+        <item>Business</item>
+        <item>Event</item>
+        <item>Travel</item>
+    </string-array>
+    <string-array name="trip_people_type">
+        <item>None</item>
+        <item>1 – 10</item>
+        <item>10 – 50</item>
+        <item>50+</item>
+    </string-array>
+    <string-array name="expensive_type">
+        <item>Food</item>
+        <item>Vehicle</item>
+        <item>Other</item>
+    </string-array>
+</resources>

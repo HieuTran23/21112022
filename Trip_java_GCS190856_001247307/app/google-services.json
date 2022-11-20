@@ -1,0 +1,68 @@
+{
+  "project_info": {
+    "project_number": "145415640271",
+    "project_id": "trip-efa29",
+    "storage_bucket": "trip-efa29.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:145415640271:android:c10ae611dc577f093013ba",
+        "android_client_info": {
+          "package_name": "com.example.trip"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "145415640271-em3ju0e1l7ht25qisvgm33vgen6lppll.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDsB2S_C1kNPVhefP9TyyzZQ7wgC-5RfqQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "145415640271-em3ju0e1l7ht25qisvgm33vgen6lppll.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:145415640271:android:c360405286fa63cb3013ba",
+        "android_client_info": {
+          "package_name": "com.example.trips"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "145415640271-em3ju0e1l7ht25qisvgm33vgen6lppll.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDsB2S_C1kNPVhefP9TyyzZQ7wgC-5RfqQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "145415640271-em3ju0e1l7ht25qisvgm33vgen6lppll.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav"
+    app:startDestination="@id/home">
+
+    <fragment
+        android:id="@+id/home"
+        android:name="com.example.trips.ui.home.HomeFragment"
+        tools:layout="@layout/fragment_home" />
+    <fragment
+        android:id="@+id/trip_list"
+        android:name="com.example.trips.ui.trip.TripListFragment"
+        tools:layout="@layout/fragment_trip_list" />
+    <fragment
+        android:id="@+id/trip_add"
+        android:name="com.example.trips.ui.trip.TripAddFragment"
+        tools:layout="@layout/fragment_trip_add" />
+    <fragment
+        android:id="@+id/calendar"
+        android:name="com.example.trips.ui.dialog.CalendarFragment"
+        tools:layout="@layout/fragment_calendar" />
+    <fragment
+        android:id="@+id/addTripConfirmFragment"
+        android:name="com.example.trips.ui.trip.AddTripConfirmFragment"
+        tools:layout="@layout/fragment_trip_add_confirm" />
+    <fragment
+        android:id="@+id/tripDetailsFragment"
+        android:name="com.example.trips.ui.trip.TripDetailsFragment"
+        tools:layout="@layout/fragment_trip_details" />
+    <fragment
+        android:id="@+id/trip_edit"
+        android:name="com.example.trips.ui.trip.TripEditFragment"
+        tools:layout="@layout/fragment_trip_edit" />
+</navigation>

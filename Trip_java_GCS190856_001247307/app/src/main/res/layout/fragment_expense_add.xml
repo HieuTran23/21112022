@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.expenses.ExpenseAddFragment">
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <Button
+            android:id="@+id/buttonCreateExpense"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:backgroundTint="@color/cyan_500"
+            android:text="@string/add_new_expense"
+            app:layout_constraintEnd_toEndOf="@+id/editTextExpenseComment"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/editTextExpenseComment"
+            app:layout_constraintTop_toBottomOf="@+id/editTextExpenseComment" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/textInputLayout1"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
+            android:layout_width="0dp"
+            android:layout_height="55dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="16dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textViewExpenseErrorMessage">
+
+            <AutoCompleteTextView
+                android:id="@+id/autoCompleteTextViewExpenseType"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+
+                android:inputType="none"
+                android:text="@string/food"
+                tools:ignore="LabelFor" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <EditText
+            android:id="@+id/editTextExpenseAmount"
+            android:layout_width="0dp"
+            android:layout_height="55dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="16dp"
+            android:layout_weight="1"
+            android:autofillHints="name"
+            android:background="@drawable/edit_text_bg"
+            android:drawableStart="@drawable/custom_amount"
+            android:drawablePadding="10dp"
+            android:ems="10"
+            android:hint="@string/amount"
+            android:inputType="number"
+            android:paddingStart="15dp"
+            android:selectAllOnFocus="true"
+            android:textColorHint="#757575"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.482"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textInputLayout1"
+            tools:ignore="RtlSymmetry" />
+
+        <EditText
+            android:id="@+id/editTextExpenseComment"
+            android:layout_width="0dp"
+            android:layout_height="55dp"
+            android:layout_marginTop="16dp"
+            android:layout_weight="1"
+            android:autofillHints="name"
+            android:background="@drawable/edit_text_bg"
+            android:drawableStart="@drawable/custom_comment"
+            android:drawablePadding="10dp"
+            android:ems="10"
+            android:gravity="center_vertical"
+            android:hint="@string/comment"
+            android:inputType="text"
+            android:paddingStart="15dp"
+            android:selectAllOnFocus="true"
+            android:textColorHint="#757575"
+            app:layout_constraintEnd_toEndOf="@+id/editTextTimeOfExpense"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="@+id/editTextExpenseAmount"
+            app:layout_constraintTop_toBottomOf="@+id/editTextDateOfExpense"
+            tools:ignore="RtlSymmetry" />
+
+        <EditText
+            android:id="@+id/editTextDateOfExpense"
+            android:layout_width="0dp"
+            android:layout_height="55dp"
+            android:layout_marginTop="16dp"
+            android:autofillHints="name"
+            android:background="@drawable/edit_text_bg"
+            android:drawableStart="@drawable/custom_calendar_month"
+            android:drawablePadding="10dp"
+            android:ems="10"
+            android:hint="@string/date"
+            android:inputType="none"
+            android:paddingStart="15dp"
+            app:layout_constraintStart_toStartOf="@+id/editTextExpenseAmount"
+            app:layout_constraintTop_toBottomOf="@+id/editTextExpenseAmount"
+            tools:ignore="RtlSymmetry,TextFields" />
+
+        <EditText
+            android:id="@+id/editTextTimeOfExpense"
+            android:layout_width="0dp"
+            android:layout_height="55dp"
+            android:layout_marginStart="8dp"
+            android:autofillHints="name"
+            android:background="@drawable/edit_text_bg"
+            android:drawableStart="@drawable/custome_time"
+            android:drawablePadding="10dp"
+            android:ems="10"
+            android:hint="@string/time"
+            android:inputType="none"
+            android:paddingStart="15dp"
+            app:layout_constraintBottom_toBottomOf="@+id/editTextDateOfExpense"
+            app:layout_constraintEnd_toEndOf="@+id/editTextExpenseAmount"
+            app:layout_constraintStart_toEndOf="@+id/editTextDateOfExpense"
+            app:layout_constraintTop_toTopOf="@+id/editTextDateOfExpense"
+            tools:ignore="RtlSymmetry,TextFields" />
+
+        <ImageView
+            android:id="@+id/imageViewBack"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:src="@drawable/ic_baseline_arrow_back_24"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:contentDescription="@string/view_back" />
+
+        <TextView
+            android:id="@+id/textViewExpenseErrorMessage"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            android:textColor="@color/red_600"
+            app:layout_constraintEnd_toEndOf="@+id/textInputLayout1"
+            app:layout_constraintStart_toStartOf="@+id/imageViewBack"
+            app:layout_constraintTop_toBottomOf="@+id/imageViewBack" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</FrameLayout>
